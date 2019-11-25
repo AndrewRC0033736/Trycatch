@@ -21,6 +21,15 @@ namespace Trycatch
             double d = double.Parse(pi);
             richTextBox1.AppendText(d.ToString() + "\n");
             richTextBox1.AppendText(i.ToString() + "\n");
+            string st = "three";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an integer");
+            }
         }
 
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
