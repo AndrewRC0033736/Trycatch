@@ -19,6 +19,8 @@ namespace Trycatch
             string pi = "3.14159265";
             int i = int.Parse(s);
             double d = double.Parse(pi);
+            richTextBox1.AppendText(d.ToString() + "\n");
+            richTextBox1.AppendText(i.ToString() + "\n");
         }
 
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
